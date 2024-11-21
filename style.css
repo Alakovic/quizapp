@@ -31,3 +31,18 @@ body{
 .bg-success, .bg-danger {
     color: white;
 }
+
+#endScreen{
+    text-align: center;
+}
+
+#endScreen img {
+    width: 100%;
+}
+
+
+.button-row{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}

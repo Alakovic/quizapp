@@ -18,12 +18,26 @@
     </nav>
 
     <div class="container">
+
+
+
+
         <div class="card quiz-card">
-            <img src="./img/brainstorm.jpg" class="card-img-top" alt="picture">
+            <img src="./img/brainstorm.jpg" id="header-image" class="card-img-top" alt="picture">
+
+            <div class="progress" role="progressbar" >
+              <div class="progress-bar" id="progress-bar" style="width: 0%">25%</div>
+            </div>
+
 
             <div class="card-body" id="endScreen"  style="display:none;">
-               Quiz beendet!!
-              </div>
+              <div> Quiz beendet!!</div> 
+              <div>Du hast <b id="amount-of-right-questions">xxx</b> Frage von <b id="amount-of-questions">xxxx</b> richtig beantwortet.</div>
+              <div class="button-row">
+              <button class="btn btn-primary" onclick="restartGame()">Neue Spiele </button>
+            </div>   
+
+            </div>
 
             <div class="card-body" id="questionBody">
               <h5 class="card-title" id="question">Frage</h5>
